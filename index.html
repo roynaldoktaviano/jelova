@@ -254,6 +254,19 @@
         }
       }
 
+      .text-animate span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 0.05s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
       .success-message {
         animation: slideDown 0.5s ease-out;
       }
@@ -261,11 +274,11 @@
   </head>
 
   <body
-    class="overflow-x-hidden overflow-y-hidden max-w-[600px] mx-auto h-screen bg-[url('./images/bga.png')] bg-cover bg-no-repeat"
+    class="overflow-x-hidden overflow-y-hidden max-w-[600px] mx-auto h-screen bg-[#edd3fb] bg-cover bg-no-repeat"
   >
     <div class="relative cover">
       <video autoplay muted playsinline class="absolute w-full h-screen object-cover z-0">
-        <source src="./images/eleora.mp4" type="video/mp4" />
+        <source src="./images/jelova.mp4" type="video/mp4" />
         Browser kamu tidak mendukung video HTML5.
       </video>
       
@@ -274,7 +287,7 @@
       >
         <div class="">
           <button
-            class="bg-[#ffb7ce] px-5 py-2 cursor-pointer mt-[90vw] lg:mt-[22vw] text-[6.5vw] light lg:text-[2vw] mx-auto trocchi text-sm text-white rounded-[70px] btn-hover"
+            class="bg-[#9f81b9] px-5 py-2 cursor-pointer mt-[120vw] lg:mt-[22vw] text-[6.5vw] light lg:text-[2vw] mx-auto trocchi text-sm text-white rounded-[70px] btn-hover"
           >
             Open Invitation
           </button>
@@ -288,9 +301,9 @@
       <div class="justify-between items-top fade-in">
         <div>
           <img
-            src="./images/8.png"
+            src="./images/atass.png"
             alt=""
-            class="w-full mx-auto mb-[6vw] lg:w-[20vw]"
+            class="w-[40%] ml-auto mb-[6vw] lg:w-[20vw]"
           />
         </div>
         <!-- <div class="mt-[-9vw]">
@@ -304,56 +317,76 @@
 
       <!-- Name Section -->
       <div class="fade-in fade-in-delay-1">
-        <div class="flex justify-center items-center gap-[2vw] mt-[-20vw]">
+        <div class="flex justify-center items-center gap-[2vw] mt-[-10vw]">
           <!-- Gambar kiri -->
-          <img
+          <!-- <img
             src="./images/9.png"
             alt="hiasan kiri"
             class="w-[25vw] lg:w-[3vw] animasi-atas"
-          />
+          /> -->
         
           <!-- Teks nama -->
           <p
-            class="text-[6vw] lg:text-[3vw] text-[#e95fb6] text-center britt lg:mb-[-5vw] mb-[-2vw]"
+            class="text-[8vw] lg:text-[3vw] text-[#b583d4] text-center lilita lg:mb-[-5vw] mb-[-2vw]"
           >
-            Elleora Christalline Gunawan
+            Jelove Nasrani Sumolang 
           </p>
         
           <!-- Gambar kanan -->
-          <img
+          <!-- <img
             src="./images/10.png"
             alt="hiasan kanan"
             class="w-[25vw] lg:w-[3vw] animasi-bawah"
-          />
+          /> -->
         </div>
         
         <div class="flex justify-center">
+          <div class="w-[20vw] lg:w-[3vw]">
+              <img
+              src="./images/balo.png"
+              alt="hiasan kanan"
+              class="w-full lg:w-[3vw] mt-[10vw] animasi-bawah"
+            />
+
+            <img
+            src="./images/kembang.png"
+            alt="hiasan kanan"
+            class="w-full lg:w-[3vw] ml-[-3vw] mt-[10vw] spin-loop"
+          />
+          </div>
           <div class="relative inline-block p-2 mx-auto">
             <!-- Gambar utama -->
             <img
-              src="./images/foto.png"
+              src="./images/fotoutama.png"
               alt="baby"
               class="w-[45vw] mt-5 lg:w-[10vw] mx-auto rounded-lg"
             />
           
             <!-- Hiasan kiri atas -->
             <img
-              src="./images/6.png"
+              src="./images/atas.png"
               alt="hiasan atas"
-              class="absolute top-[2px] left-[-10px] w-[50px] lg:w-[70px] spin-loop"
+              class="absolute top-[16px] left-[-6px] w-[50px] lg:w-[70px] spin-loop"
             />
           
             <!-- Hiasan kanan bawah -->
             <img
-              src="./images/5.png"
+              src="./images/nawah.png"
               alt="hiasan bawah"
               class="absolute bottom-[-10px] right-[-10px] w-[60px] lg:w-[80px] spin-loop"
             />
           </div>
+          <div class="w-[20vw] lg:w-[3vw]">
+            <img
+            src="./images/kembang.png"
+            alt="hiasan kanan"
+            class="w-full lg:w-[3vw] spin-loop mt-[22vw] ml-[5vw]"
+          />
+        </div>
         </div>
         
         <p
-          class="text-[#90664e] text-[5vw] mt-[6vw] lg:text-[2vw] text-center font-serif mt-[4vw] font-light"
+          class="text-[#90664e] text-[5vw] mt-[6vw] lg:text-[2vw] text-center lilita mt-[4vw] font-light"
         >
           IS TURNING
         </p>
@@ -386,6 +419,26 @@
             />
           </div>
         </div>
+      </div>
+
+      <div class="text-center w-[70vw] px-[4vw] text-animate">
+        <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="day">Sunday</p>
+      
+        <div class="grid grid-cols-3 items-center self-center justify-between my-[4vw]">
+          <div class="w-full">
+            <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="month">November</p>
+          </div>
+          <div class="w-[10vw]">
+            <p class="text-[#e079a7] text-[10vw] lg:text-[2vw] alice" id="date">23</p>
+          </div>
+          <div class="w-full">
+            <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="year">2025</p>
+          </div>
+        </div>
+      
+        <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="time">
+          at 13.00
+        </p>
       </div>
 
       <!-- Middle Decoration -->
@@ -476,20 +529,22 @@
         <div class="w-[15vw]">
           <img src="./images/2.png" alt="" class="object-contain animasi-bawah" />
         </div>
-        <div class="text-center w-[70vw] px-[4vw] ">
-          <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice">Sunday</p>
-          <div class="flex items-center gap-[5vw] justify-between my-[4vw]">
-            <div class=" w-full ">
-              <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice">November</p>
+        <div class="text-center w-[70vw] px-[4vw] text-animate">
+          <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="day">Sunday</p>
+        
+          <div class="grid grid-cols-3 items-center self-center justify-between my-[4vw]">
+            <div class="w-full">
+              <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="month">November</p>
             </div>
             <div class="w-[10vw]">
-              <p class="text-[#e079a7] text-[10vw] lg:text-[2vw] alice">23</p>
+              <p class="text-[#e079a7] text-[10vw] lg:text-[2vw] alice" id="date">23</p>
             </div>
-            <div class="w-full ">
-              <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice">2025</p>
+            <div class="w-full">
+              <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="year">2025</p>
             </div>
           </div>
-          <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice">
+        
+          <p class="text-[#757070] text-[6vw] lg:text-[2vw] alice" id="time">
             at 13.00
           </p>
         </div>
@@ -502,7 +557,7 @@
       <img
         src="./images/locpink.png"
         alt=""
-        class="w-[4vw] mt-[7vw] mx-auto lg:w-[5vw] fade-in fade-in-delay-4"
+        class="w-[4vw] mt-[4vw] mx-auto lg:w-[5vw] fade-in fade-in-delay-4"
       />
       <div class="text-center fade-in fade-in-delay-4">
         <p class="text-[5vw] lg:text-[2vw] alice text-[#757070]">
@@ -882,7 +937,23 @@
             }, 500);
           });
         }
-      });
+      });   
     </script>
+    
+<script>
+  function animateText(id) {
+    const el = document.getElementById(id);
+    const text = el.textContent;
+    el.textContent = "";
+    [...text].forEach((letter, i) => {
+      const span = document.createElement("span");
+      span.textContent = letter;
+      span.style.animationDelay = `${i * 0.05}s`;
+      el.appendChild(span);
+    });
+  }
+
+  ["day", "month", "date", "year", "time"].forEach((id) => animateText(id));
+</script>
   </body>
 </html>
